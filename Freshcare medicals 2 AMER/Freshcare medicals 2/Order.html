@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lifeline Medicals | Pharmacy</title>
+    <link rel="stylesheet" href="Order.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pharmacy1.css">
+    <link rel="stylesheet" href="OrderNAV.css">
+    <script src="Order.js" defer></script>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="https://logoisus.com/wp-content/uploads/2019/02/Medicare_eh2id.jpg"
+            alt="Freshcare Medicals Logo"
+        /></a>
+      </div>
+      <div class="site-name">
+        <h1>Lifeline Medicals</h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="doctors.html">Our Doctors</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="pharmacy1.html">pharmacy</a></li>
+        </ul>
+      </nav>
+      </nav>
+    </header>
+
+
+    <section id="order-summary">
+      <h3>Your Order</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="order-items">
+          <!-- Dynamic content added via JavaScript -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Grand Total</td>
+            <td id="order-grand-total">Rs. 0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    
+
+
+    <section class="pharmacy">
+      <h2>Order Medicine</h2>
+      <form action="#" method="post" class="pharmacy-form">
+    
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Full Name"
+          required
+        />
+    
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email Address"
+          required
+        />
+    
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Your Phone Number"
+          required
+        />
+    
+        <label for="address">Delivery Address:</label>
+        <textarea
+          id="address"
+          name="address"
+          rows="4"
+          placeholder="Your Delivery Address"
+          required
+        ></textarea>
+    
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment-method" required>
+          <option value="" disabled selected>Select a Payment Method</option>
+          <option value="cash">Cash on Delivery</option>
+          <option value="credit-debit">Credit/Debit Card</option>
+        </select>
+    
+        <div id="card-details" style="display: none; margin-top: 1rem;">
+          <h3>Card Details</h3>
+          <label for="card-number">Card Number:</label>
+          <input
+            type="text"
+            id="card-number"
+            name="card-number"
+            placeholder="1234 5678 9012 3456"
+            pattern="\d{4} \d{4} \d{4} \d{4}"
+            required
+          />
+    
+          <label for="card-expiry">Expiry Date:</label>
+          <input
+            type="month"
+            id="card-expiry"
+            name="card-expiry"
+            required
+          />
+    
+          <label for="card-cvv">CVV:</label>
+          <input
+            type="text"
+            id="card-cvv"
+            name="card-cvv"
+            placeholder="123"
+            pattern="\d{3}"
+            required
+          />
+    
+          <label for="card-name">Name on Card:</label>
+          <input
+            type="text"
+            id="card-name"
+            name="card-name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+    
+        <button type="submit" class="btn-submit">Place Order</button>
+      </form>
+    </section>
+
+
+<div id="popup" style="display: none;">
+  <div id="popup-content">
+
+  </div>
+  <button class="close-btn">Close</button>
+</div>
+
+    
+
+    
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="https://logoisus.com/wp-content/uploads/2019/02/Medicare_eh2id.jpg"
+            alt="Freshcare Medicals Logo"
+          />
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Doctors</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Phone: (011) 2 453 000</li>
+            <li>Email: freshcare@gmail.com</li>
+            <li>Location: 25/2, Darley Road, Colombo, Sri Lanka</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Freshcare Medicals. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- End of Footer Section -->
+  </body>
+</html>

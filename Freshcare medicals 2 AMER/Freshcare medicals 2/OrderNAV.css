@@ -1,0 +1,140 @@
+/* General Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu li {
+    margin-left: 20px;
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar .menu li a:hover {
+    color: #f4f7fc;
+}
+
+/* Mobile Styles */
+.navbar .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #007bff;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar .menu li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.navbar .menu li a {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar .menu.active {
+    display: flex;
+}
+
+.navbar .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.navbar .hamburger div {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+}
+
+/* Media Query for Tablets and Below (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar .menu li {
+        margin-left: 0;
+    }
+
+    .navbar .hamburger {
+        display: block;
+    }
+
+    .navbar .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #007bff;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px 0;
+    }
+
+    .navbar .menu.active {
+        display: flex;
+    }
+}
+
+/* Media Query for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar .menu li a {
+        font-size: 16px;
+    }
+
+    .navbar .logo {
+        font-size: 18px;
+    }
+
+    .navbar .menu {
+        width: 100%;
+        right: 0;
+        top: 60px;
+    }
+
+    .navbar .hamburger {
+        width: 30px;
+        height: 25px;
+    }
+
+    .navbar .hamburger div {
+        height: 5px;
+    }
+}

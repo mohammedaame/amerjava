@@ -1,0 +1,455 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #212427;
+    line-height: 1.6;
+    background-color: #67b5dc;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #1e88e5;
+}
+
+a:hover {
+    color: #1565c0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #1e88e5;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+    width: 80px;
+}
+
+.header .site-name h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header .navbar li {
+    margin-left: 20px;
+}
+
+.header .navbar a {
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.header .navbar a:hover {
+    background-color: #1565c0;
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer .footer-logo img {
+    width: 80px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer .footer-links, .footer .footer-contact {
+    flex: 1;
+    margin: 10px;
+    color: #ddd;
+}
+
+.footer .footer-links h3, .footer .footer-contact h3 {
+    margin-top: 0;
+}
+
+.footer .footer-links ul, .footer .footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-links li, .footer .footer-contact li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-bottom {
+    border-top: 1px solid #e0dada;
+    padding-top: 10px;
+}
+
+/* Home Page Styles */
+.hero-text{
+
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.home {
+    padding: 20px;
+    background-color: #5585a7;
+}
+
+.home h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #1e88e5;
+    margin-top: 0;
+}
+
+.home img {
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.home-text {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.home-list {
+    text-align: center;
+}
+
+.home-list h2 {
+    font-size: 24px;
+    color: #1e88e5;
+}
+
+.home-list ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.home-list li {
+    margin-bottom: 10px;
+}
+
+.hero-img{
+
+    width: 100%;
+    height: auto;
+}
+
+.service-image{
+    width: 100%;
+    height: auto;
+}
+
+.info-img{
+    width: 600px;
+    height: 500px;
+    margin-left:20px;
+}
+/* About Page Styles */
+.about {
+    padding: 20px;
+    background-color: #ffffff;
+
+}
+
+.branch {
+    margin-bottom: 30px;
+}
+
+.map iframe {
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    height: 350px;
+
+}
+
+.branch img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.branch-description {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+
+}
+
+.summary-table th, .summary-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.summary-table th {
+    background-color: #1e88e5;
+    color: white;
+}
+
+.summary-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.summary-table tfoot {
+    font-weight: bold;
+}
+
+thead{
+    color: #555;
+}
+
+h2{
+    text-align: center;
+    font-size: x-large;
+    
+}
+/* Services Page Styles */
+.services {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.services-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.services-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.services-images div {
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.services-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.services-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services-link a {
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.services-link a:hover {
+    background-color: #1565c0;
+}
+
+/* Doctors Page Styles */
+.doctors {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-grid:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #ccd4d8;
+}
+
+.doctor-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.doctor-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.doctor-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Reservation Page Styles */
+.reservation {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.reservation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.reservation-form input, 
+.reservation-form select, 
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.reservation-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reservation-form button:hover {
+    background-color: #1565c0;
+}
+
+/* Pharmacy Page Styles */
+main {
+    padding: 20px;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    border: 1px solid #a09898;
+    background-color: #ccd4d8;
+    padding: 14px;
+    padding-right: 900px;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    border-radius: 1%;
+}
+
+.product-card img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 20px;
+}
+.txtpharma{
+    position: relative;
+    left: 380px;
+    bottom: 180px;
+    width: 400px;
+}
+#txtadjust{
+    font-weight: 500;
+    font-size: larger;
+}
+
+main {
+    padding: 20px;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    border: 1px solid #a09898;
+    background-color: #ccd4d8;
+    padding: 14px;
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    border-radius: 1%;
+}
+
+.product-card img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 20px;
+}
+
+.txtpharma {
+    position: relative;
+    left: 380px;
+    bottom: 180px;
+    width: 400px;
+}
+
+#txtadjust {
+    font-weight: 500;
+    font-size: larger;
+}
+

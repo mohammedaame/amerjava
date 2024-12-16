@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lifeline Medicals | Consultation Reservation</title>
+    <link rel="stylesheet" href="reservation.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="https://logoisus.com/wp-content/uploads/2019/02/Medicare_eh2id.jpg"
+            alt="Freshcare Medicals Logo"
+        /></a>
+      </div>
+      <div class="site-name">
+        <h1>Lifeline Medicals</h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="doctors.html">Our Doctors</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="pharmacy1.html">pharmacy</a></li>
+        </ul>
+      </nav>
+      </nav>
+    </header>
+    <!-- End of Header Section -->
+
+    <!-- Reservation Section -->
+    <section class="reservation">
+      <h2>Consultation Reservation</h2>
+      <form action="#" method="post" class="reservation-form">
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" name="doctor" required>
+          <option value="" disabled selected>Select a Doctor</option>
+          <option value="dr-john-doe">Dr. John Doe - Cardiologist</option>
+          <option value="dr-jane-smith">Dr. Jane Smith - Neurologist</option>
+          <option value="dr-emily-johnson">
+            Dr. Emily Johnson - Orthopedic Surgeon
+          </option>
+          <option value="dr-michael-brown">
+            Dr. Michael Brown - Pediatrician
+          </option>
+          <option value="dr-sarah-lee">Dr. Sarah Lee - Dermatologist</option>
+          <option value="dr-david-wilson">Dr. David Wilson - Oncologist</option>
+        </select>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required />
+
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Full Name"
+          required
+        />
+
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email Address"
+          required
+        />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Your Phone Number"
+          required
+        />
+
+        <label for="message">Additional Information:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Any additional information or special requests"
+        ></textarea>
+
+        <button type="submit" class="btn-submit">Submit Reservation</button>
+      </form>
+    </section>
+    <!-- End of Reservation Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="https://logoisus.com/wp-content/uploads/2019/02/Medicare_eh2id.jpg"
+            alt="Hospital Logo"
+          />
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctors.html">Our Doctors</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Phone: (011) 3 530 000</li>
+            <li>Email: lifelinemedicals@gmail.com</li>
+            <li>Location: 25/2, boralla Road, Colombo 10, Sri Lanka</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 lifeline Medicals. medical service</p>
+      </div>
+    </footer>
+  </body>
+</html>
